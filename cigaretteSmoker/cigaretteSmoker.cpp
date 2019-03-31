@@ -48,6 +48,7 @@ void* smoker2Routine(void* arg){
 
 int main(){
     pthread_t smoker_threads[3];
+    init();
     pthread_create(&smoker_threads[0], NULL, smoker0Routine, NULL);
     pthread_create(&smoker_threads[0], NULL, smoker1Routine, NULL);
     pthread_create(&smoker_threads[0], NULL, smoker2Routine, NULL);
